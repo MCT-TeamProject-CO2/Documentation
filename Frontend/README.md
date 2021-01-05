@@ -6,14 +6,12 @@
  - [Requirements](#requirements)
  - [Setup](#setup)
  - [Config](#config)
- - [Next Chapter - Modules](#next-chapter-modules)
 
- ## Introduction
+## Introduction
 
- The Node server is made to be modular by design, it uses a module loader to dynamically load modules and let these interact with each other in an easy to understand and interactive way.
+Placeholder for frontend readme
 
- ## Requirements
-
+## Requirements
 
 ## Setup
 
@@ -22,9 +20,6 @@
 ```sh
 git clone https://github.com/MCT-TeamProject-CO2/Frontend.git
 ```
-
-##### Starting the code
-
 
 
 ## Config
