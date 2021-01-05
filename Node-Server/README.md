@@ -10,7 +10,12 @@
 
  ## Introduction
 
- The Node server is made to be modular by design, it uses a module loader to dynamically load modules and let these interact with each other in an easy to understand and interactive way.
+The Node-Server is responsible for providing the following functionality:
+ - REST API
+ - Sending out alerts (WS)
+ - Continuous data update (WS)
+
+It is entirely made to be fully modular without having to rewrite entire parts of the code base. Most of it should just be copy paste from older projects.
 
  ## Requirements
 
