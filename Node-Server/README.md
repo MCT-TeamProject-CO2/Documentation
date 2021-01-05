@@ -1,4 +1,4 @@
-# [`Node-Server`](https://github.com/MCT-TeamProject-CO2)
+# [`Node-Server`](https://github.com/MCT-TeamProject-CO2/Node-Server)
 
 ## Table Of Contents
 
@@ -23,7 +23,7 @@
 ##### Clone Project
 
 ```sh
-git clone https://github.com/MCT-TeamProject-CO2.git
+git clone https://github.com/MCT-TeamProject-CO2/Node-Server.git
 ```
 
 ##### Starting the code
