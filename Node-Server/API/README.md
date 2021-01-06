@@ -11,7 +11,7 @@ Open endpoints require no Authentication.
 - [Login](v1/auth/login/)
     - [`POST /api/v1/auth/login/`](v1/auth/login/post.md)
 - [Microsoft OAUTH2](v1/auth/oauth2/)
-    - [`POST /api/v1/oauth2/`](v1/auth/oauth2/post.md)
+    - [`POST /api/v1/auth/oauth2/`](v1/auth/oauth2/post.md)
 - [Revoke](v1/auth/oauth2/)
     - [`GET /api/v1/auth/revoke/`](v1/auth/revoke/delete.md)
 
