@@ -1,21 +1,30 @@
 # POST login
 
-This endpoint returns all mail configurations.
+This endpoint allows you to create a new session using user credentials.
 
 **URL** : `/api/v1/auth/login/`
 
 **Method** : `POST`
 
-**Auth required** : NO
+**Auth required** : `NO`
 
-**Data constraints**
+## Request Body
 
-`NOTE`: The data constraints are written as JSON.
+The basic login expecteds at least username & password.
 
 ```json
 {
     "username": "UserName",
     "password": "Password"
+}
+```
+
+Alternatively you can use other identifiers to log a user in, these can be used in combination or individually to identify the user.
+```json
+{
+    "uid": "6140ae10-40a7-42e2-910b-cb996f35854f",
+
+    "email": "email@example.com"
 }
 ```
 
@@ -35,7 +44,7 @@ This endpoint returns a json.
 
 ## Error Response 400
 
-**Condition** : the body is invalid or does not exist
+**Condition** : The body contents are invalid or empty.
 
 **Code** : `400 BAD REQUEST`
 
@@ -44,23 +53,23 @@ This endpoint returns a json.
 ```json
 {
     "code": 400,
-    "status": "401 - Bad Request",
+    "status": "400 - Bad Request",
     "message": "The server did not understand the request, an invalid request body or headers may have been given."
 }
 ```
 
-## Error Response 401
+## Error Response 403
 
-**Condition** : the given password is incorrect
+**Condition** : The user could not be found or the password given did not match the one on the server.
 
-**Code** : `401 UNAUTHORIZED`
+**Code** : `403 PERMISSION DENIED`
 
 **Content** :
 
 ```json
 {
-    "code": 401,
-    "status": "401 - Unauthorized",
-    "message": "The client failed to authenticate."
+    "code": 403,
+    "status": "403 - Permission Denied",
+    "message": "The client does not have permission to access the requested resource."
 }
 ```

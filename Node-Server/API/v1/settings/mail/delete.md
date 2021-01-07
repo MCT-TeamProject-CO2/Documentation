@@ -6,11 +6,9 @@ This endpoint returns all mail configurations.
 
 **Method** : `DELETE`
 
-**Auth required** : YES
+**Auth required** : `YES`
 
-**Data constraints**
-
-`NOTE`: The data constraints are written as JSON
+## Headers
 
 ```json
 {
@@ -22,11 +20,13 @@ This endpoint returns all mail configurations.
 
 **Code** : `202 ACCEPTED`
 
-This endpoint does not return json.
+**Content example**
+
+Empty response body.
 
 ## Error Response 400
 
-**Condition** : if the body is invalid or does not exist
+**Condition** : The body contents are invalid or empty.
 
 **Code** : `400 BAD REQUEST`
 

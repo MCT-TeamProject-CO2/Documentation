@@ -6,11 +6,9 @@ This endpoint returns all mail configurations.
 
 **Method** : `GET`
 
-**Auth required** : YES
+**Auth required** : `YES`
 
-**Data constraints**
-
-`NOTE`: The data constraints are written as JSON
+## Headers
 
 ```json
 {

@@ -1,20 +1,40 @@
 # POST mail
 
-This endpoint returns all mail configurations.
+Create a new mail configuration.
 
 **URL** : `/api/v1/settings/mail/`
 
 **Method** : `POST`
 
-**Auth required** : YES
+**Auth required** : `YES`
 
-**Data constraints**
-
-`NOTE`: The data constraints are written as JSON
+## Headers
 
 ```json
 {
     "Authorization": "SessionId"
+}
+```
+
+## Request Body
+
+More information on specific settings for the request body can be found [here](https://nodemailer.com/smtp/).
+
+The below body is an example of what you could send.
+
+```json
+{
+    "name": "<configuration name>",
+    "config": {
+        "pool": true,
+        "host": "smtp.example.com",
+        "port": 465,
+        "secure": true,
+        "auth": {
+            "user": "username",
+            "pass": "password"
+        }
+    }
 }
 ```
 
@@ -41,7 +61,7 @@ If the configuration already exist the following will be returned
 
 ## Error Response 400
 
-**Condition** : If no 'url' was passed in the URLSearchParams.
+**Condition** : The body contents are invalid or empty.
 
 **Code** : `400 BAD REQUEST`
 

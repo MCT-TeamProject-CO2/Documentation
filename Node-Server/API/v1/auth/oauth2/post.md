@@ -1,16 +1,14 @@
 # POST oauth2
 
-This endpoint returns all mail configurations.
+This endpoint allows you to change an Microsoft OAUTH2 code to create a new session. Under the hood this endpoint will try to match the email returned by the Microsoft to one in the DB.
 
 **URL** : `/api/v1/auth/oauth2/`
 
 **Method** : `POST`
 
-**Auth required** : YES
+**Auth required** : `YES`
 
-**Data constraints**
-
-`NOTE`: The data constraints are written as JSON.
+## Request Body
 
 ```json
 {
@@ -42,7 +40,7 @@ If the configuration already exist the following will be returned
 
 ## Error Response 404
 
-**Condition** : if no user was found matching this microsoft account
+**Condition** : If no user was found matching the Microsoft account you're trying to sign in.
 
 **Code** : `404 NOT FOUND`
 
@@ -50,24 +48,25 @@ If the configuration already exist the following will be returned
 
 ```json
 {
-    "code": 400,
-    "status": "400 - Bad Request",
-    "message": "The server did not understand the request, an invalid request body or headers may have been given."
+    "code": 404,
+    "status": "404 - Not Found",
+    "message": "The requested resource has not been found."
 }
 ```
 
 ## Error Response 406
 
-**Condition** : 
+**Condition** : This error may occur if somewhere along the OAUTH2 flow an error occurred, there may also be an additional data key in the JSON response body.
 
 **Code** : `406 NOT ACCEPTABLE`
 
-**Content** : This is returned by microsoft's endpoint: https://graph.microsoft.com/v1.0/me
+**Content** : 
 
 ```json
 {
     "code": 406,
     "status": "406 - Not Acceptable",
+    "message": "After Processing the Request Body the server did not find the content that was needed to complete the request.",
     "data": {
         "error": "invalid_grant",
         "error_description": "AADSTS70000: The provided value for the 'code' parameter is not valid. The code has expired.\r\nTrace ID: b4b745da-baba-40fd-8c05-0624cedc5900\r\nCorrelation ID: 8174bc34-c573-4133-bb62-0ff783c7a055\r\nTimestamp: 2021-01-06 17:33:22Z",
