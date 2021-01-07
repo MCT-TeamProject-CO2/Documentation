@@ -1,6 +1,6 @@
 # PUT users
 
-This endpoint does not delete users but instead just disables their access rights.
+Update a user's profile in the DB.
 
 **URL** : `/api/v1/users/`
 
