@@ -8,21 +8,28 @@ Currently the API is on its first revision, there will be no differentiation unt
 
 Open endpoints require no Authentication.
 
-- [Login](v1/auth/login/)
+- [Auth](v1/auth/)
     - [`POST /api/v1/auth/login/`](v1/auth/login/post.md)
-- [Microsoft OAUTH2](v1/auth/oauth2/)
     - [`POST /api/v1/auth/oauth2/`](v1/auth/oauth2/post.md)
-- [Revoke](v1/auth/oauth2/)
-    - [`GET /api/v1/auth/revoke/`](v1/auth/revoke/delete.md)
+    - [`DELETE /api/v1/auth/revoke/`](v1/auth/revoke/delete.md)
 
 ## Closed Endpoints
 
 Closed endpoints **require** Authentication.
 
-- [Settings](v1/settings/)
+- [Locations](v1/locations/)
+    - [`GET /api/v1/locations/`](v1/locations/get.md)
+    - [`POST /api/v1/locations/`](v1/locations/post.md)
+- [Measurements](v1/location/)
+    - [`GET /api/v1/measurements/`](v1/measurements/get.md)
+- [Settings](v1/measurements/)
+    - [`DELETE /api/v1/settings/mail`](v1/settings/mail/delete.md)
     - [`GET /api/v1/settings/mail`](v1/settings/mail/get.md)
     - [`POST /api/v1/settings/mail`](v1/settings/mail/post.md)
-    - [`DELETE /api/v1/settings/mail`](v1/settings/mail/delete.md)
+
+    - [`DELETE /api/v1/settings/sms`](v1/settings/sms/delete.md)
+    - [`GET /api/v1/settings/sms`](v1/settings/sms/get.md)
+    - [`POST /api/v1/settings/sms`](v1/settings/sms/post.md)
 - [Users](v1/users/)
     - [`DELETE /api/v1/users/`](v1/users/delete.md)
     - [`GET /api/v1/users/`](v1/users/get.md)
