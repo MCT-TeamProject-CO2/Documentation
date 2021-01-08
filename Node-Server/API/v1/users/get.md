@@ -37,3 +37,19 @@ This endpoint returns a json.
     }
 ]
 ```
+
+## Error Response 403
+
+**Code** : `403 PERMISSION DENIED`
+
+**Condition** : The session id given in the authorization header is invalid, does not exist or has expired.
+
+**Content**
+
+```json
+{
+    "code": 403,
+    "status": "403 - Permission Denied",
+    "message": "The client does not have permission to access the requested resource."
+}
+```
