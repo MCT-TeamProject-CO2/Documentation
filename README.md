@@ -2,7 +2,7 @@
 
 Each and every project will be explained in their respective chapter.
 
-## Table Of Contents
+## Table of contents
 
 - [Basic Setup](#basic-setup)
 - [DataHandling](#datahandling)

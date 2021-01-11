@@ -1,6 +1,6 @@
 # [`Node-Server`](https://github.com/MCT-TeamProject-CO2/Node-Server)
 
-## Table Of Contents
+## Table of contents
 
  - [Introduction](#introduction)
  - [Requirements](#requirements)
