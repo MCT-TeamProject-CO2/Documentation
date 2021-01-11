@@ -1,6 +1,6 @@
 # Modules
 
-## Table Of Contents
+## Table of contents
 
  - [Base](#base)
  - [Registering](#registering)
