@@ -30,14 +30,6 @@ This endpoint returns a json.
 }
 ```
 
-If the configuration already exist the following will be returned
-```json
-{
-    "success": false,
-    "message": "There already exists a mail configuration with the given name."
-}
-```
-
 ## Error Response 404
 
 **Condition** : If no user was found matching the Microsoft account you're trying to sign in.
