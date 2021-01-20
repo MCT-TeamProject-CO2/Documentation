@@ -31,8 +31,12 @@ Get the last 10 minutes of measurements for a given location.
     The tagString syntax goes as follows `location.building.floor.room`.
     Preferably you should fetch `location.building.floor` but depending on your use case this might not fit your needs.
     You can fetch data from an entire location by just passing `location`, or go more in-depth with `location.building`.
- - **delta** (optional = 10)
+ - **delta** (default = 10)
     `Data to fetch of the last x amount of minutes.`
+ - **start**
+    Timestamp from where to start getting measurements.
+ - **end**
+    Timestamp till where you want to get the measurements.
 
 ## Success Response
 
@@ -41,8 +45,48 @@ Get the last 10 minutes of measurements for a given location.
 **Content example**
 
 This endpoint returns a json.
-```js
-{}
+```json
+{
+    "BCE.C.0.003": [
+        {
+            "result": "_result",
+            "table": 0,
+            "_start": "2021-01-20T15:10:30.177Z",
+            "_stop": "2021-01-20T15:12:30.192378955Z",
+            "_time": "2021-01-20T15:10:32Z",
+            "_value": 476,
+            "_field": "co2eq_ppm",
+            "_measurement": "BCE.C.0.003"
+        },
+        ...,
+        {
+            "result": "_result",
+            "table": 0,
+            "_start": "2021-01-20T15:10:30.177Z",
+            "_stop": "2021-01-20T15:12:30.192378955Z",
+            "_time": "2021-01-20T15:10:42Z",
+            "_value": 481,
+            "_field": "co2eq_ppm",
+            "_measurement": "BCE.C.0.003"
+        }
+    ]
+}
+```
+
+## Error Response 400
+
+**Condition** : The GET request params you gave were invalid.
+
+**Code** : `400 BAD REQUEST`
+
+**Content** :
+
+```json
+{
+    "code": 400,
+    "status": "400 - Bad Request",
+    "message": "The server did not understand the request, an invalid request body or headers may have been given."
+}
 ```
 
 ## Error Response 403
