@@ -12,24 +12,30 @@ Open endpoints require no Authentication.
     - [`POST /api/v1/auth/login/`](v1/auth/login/post.md)
     - [`POST /api/v1/auth/oauth2/`](v1/auth/oauth2/post.md)
     - [`DELETE /api/v1/auth/revoke/`](v1/auth/revoke/delete.md)
+    - [`GET /api/v1/auth/valid/`](v1/auth/valid/get.md)
 
 ## Closed Endpoints
 
 Closed endpoints **require** Authentication.
 
+- [Alerts](v1/alerts/)
+    - [`GET /api/v1/alerts/`](v1/alerts/get.md)
 - [Locations](v1/locations/)
     - [`GET /api/v1/locations/`](v1/locations/get.md)
     - [`POST /api/v1/locations/`](v1/locations/post.md)
-- [Measurements](v1/location/)
+    - [`PUT /api/v1/locations/`](v1/locations/put.md)
+- [Measurements](v1/measurements/)
     - [`GET /api/v1/measurements/`](v1/measurements/get.md)
-- [Settings](v1/measurements/)
+- [MQTT Disconnect](v1/mqtt_disconnect/)
+    - [`GET /api/v1/mqtt_disconnect/`](v1/mqtt_disconnect/get.md)
+    - [`POST /api/v1/mqtt_disconnect/`](v1/mqtt_disconnect/post.md)
+- [Settings](v1/settings/)
+    - [`GET /api/v1/settings/`](v1/settings/get.md)
+    - [`POST /api/v1/settings/`](v1/settings/post.md)
+- [Settings/Mail](v1/settings/mail/)
     - [`DELETE /api/v1/settings/mail`](v1/settings/mail/delete.md)
     - [`GET /api/v1/settings/mail`](v1/settings/mail/get.md)
     - [`POST /api/v1/settings/mail`](v1/settings/mail/post.md)
-
-    - [`DELETE /api/v1/settings/sms`](v1/settings/sms/delete.md)
-    - [`GET /api/v1/settings/sms`](v1/settings/sms/get.md)
-    - [`POST /api/v1/settings/sms`](v1/settings/sms/post.md)
 - [Users](v1/users/)
     - [`DELETE /api/v1/users/`](v1/users/delete.md)
     - [`GET /api/v1/users/`](v1/users/get.md)
