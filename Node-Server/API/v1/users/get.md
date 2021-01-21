@@ -16,6 +16,20 @@ Get all the users that are stored in the DB.
 }
 ```
 
+## URL Search Params
+
+`/api/v1/users?me`
+```json
+{
+    "me"
+}
+```
+
+**Params**:
+ - **me** 
+    no value needs to be provided, if me is **not** defined by an **admin** all users will be returned.
+
+
 ## Success Response
 
 **Code** : `200 OK`
