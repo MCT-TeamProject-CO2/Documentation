@@ -41,3 +41,5 @@ Closed endpoints **require** Authentication.
     - [`GET /api/v1/users/`](v1/users/get.md)
     - [`POST /api/v1/users/`](v1/users/post.md)
     - [`PUT /api/v1/users/`](v1/users/put.md)
+- [Smart Plugs](v1/smartplugs/)
+    - [`POST /api/v1/smartplugs/`](v1/smartplugs/post.md)
