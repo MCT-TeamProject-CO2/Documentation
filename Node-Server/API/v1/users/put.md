@@ -1,6 +1,6 @@
 # PUT users
 
-Update a user's profile in the DB.
+Update a user's profile in the DB. The user will be notified of this by mail.
 
 **URL** : `/api/v1/users/`
 

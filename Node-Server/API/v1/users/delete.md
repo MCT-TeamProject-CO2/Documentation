@@ -1,6 +1,6 @@
 # DELETE users
 
-This endpoint does not delete users but instead just disables their access rights.
+This endpoint does not delete users but instead just disables their access rights. The user will be notified of this by mail.
 
 **URL** : `/api/v1/users/`
 

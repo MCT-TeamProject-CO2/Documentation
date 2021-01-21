@@ -1,6 +1,6 @@
 # POST users
 
-Create a new user in the DB.
+Create a new user in the DB. The user will be notified of this by mail.
 
 **URL** : `/api/v1/users/`
 
