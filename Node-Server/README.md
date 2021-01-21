@@ -14,6 +14,7 @@ The Node-Server is responsible for providing the following functionality:
  - REST API
  - Sending out alerts (WS)
  - Continuous data update (WS)
+ - Automatic ventilation
 
 It is entirely made to be fully modular without having to rewrite entire parts of the code base. Most of it should just be copy paste from older projects.
 
