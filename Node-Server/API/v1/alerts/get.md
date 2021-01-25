@@ -21,16 +21,18 @@ Get alerts for a given time period/delta.
 `/api/v1/measurements?delta=20`
 ```json
 {
-    "delta": 20
+    "delta": 20,
+    "start" : "unix timestamp",
+    "end" : "unix timestamp"
 }
 ```
 **Params**:
  - **delta** (default = 20)
     `Data to fetch of the last x amount of minutes.`
  - **start**
-    Timestamp from where to start getting measurements.
+    `optional` Timestamp from where to start getting measurements.
  - **end**
-    Timestamp till where you want to get the measurements.
+    `optional` Timestamp till where you want to get the measurements.
 
 ## Success Response
 
@@ -54,6 +56,22 @@ This endpoint returns a json.
         "__v" : 0
     }
 ]
+```
+
+## Error Response 400
+
+**Condition** : The GET request params you gave were invalid. In this case perhaps delta AND start & end were given.
+
+**Code** : `400 BAD REQUEST`
+
+**Content** :
+
+```json
+{
+    "code": 400,
+    "status": "400 - Bad Request",
+    "message": "The server did not understand the request, an invalid request body or headers may have been given."
+}
 ```
 
 ## Error Response 403

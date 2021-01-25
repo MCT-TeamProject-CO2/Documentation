@@ -22,7 +22,9 @@ Get the last 10 minutes of measurements for a given location.
 ```json
 {
     "tagString": "BCE.C.0.003",
-    "delta": 10
+    "delta": 10,
+    "start" : "unix timestamp",
+    "end" : "unix timestamp"
 }
 ```
 **Params**:
@@ -34,9 +36,9 @@ Get the last 10 minutes of measurements for a given location.
  - **delta** (default = 10)
     `Data to fetch of the last x amount of minutes.`
  - **start**
-    Timestamp from where to start getting measurements.
+    `optional` Timestamp from where to start getting measurements.
  - **end**
-    Timestamp till where you want to get the measurements.
+    `optional` Timestamp till where you want to get the measurements.
 
 ## Success Response
 

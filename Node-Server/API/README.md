@@ -43,3 +43,7 @@ Closed endpoints **require** Authentication.
     - [`PUT /api/v1/users/`](v1/users/put.md)
 - [Smart Plugs](v1/smartplugs/)
     - [`POST /api/v1/smartplugs/`](v1/smartplugs/post.md)
+- [Mail](v1/mail/)
+    - [`DELETE /api/v1/mail/`](v1/mail/delete.md)
+    - [`GET /api/v1/mail/`](v1/mail/get.md)
+    - [`POST /api/v1/mail/`](v1/mail/post.md)

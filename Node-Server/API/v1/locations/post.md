@@ -1,6 +1,6 @@
 # POST locations
 
-Returns all the locations registered in the DB.
+Insert locations into the DB.
 
 **URL** : `/api/v1/locations/`
 

@@ -27,7 +27,7 @@ Get all the users that are stored in the DB.
 
 **Params**:
  - **me** 
-    no value needs to be provided, if me is **not** defined by an **admin** all users will be returned.
+    no value needs to be provided, if me is **not** defined by an **admin** all users will be returned. regular users only get their own user object.
 
 
 ## Success Response

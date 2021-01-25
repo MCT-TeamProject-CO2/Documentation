@@ -1,6 +1,6 @@
 # POST smarplugs
 
-updates the smart plugs connected to the tp-link account.
+updates the smart plugs connected to the tp-link account. call this endpoint when a new device has been added.
 
 **URL** : `/api/v1/smartplugs/`
 

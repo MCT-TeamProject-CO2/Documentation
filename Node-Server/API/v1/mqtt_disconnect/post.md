@@ -1,6 +1,6 @@
 # POST mqtt_disconnect
 
-Returns all the locations registered in the DB.
+Create an error log for the python data handler.
 
 **URL** : `/api/v1/mqtt_disconnect/`
 

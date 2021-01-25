@@ -1,6 +1,6 @@
 # GET mqtt_disconnect
 
-Create a new mail configuration.
+Get all error logs from the data handler for the last X minutes or between 2 specific timestamps.
 
 **URL** : `/api/v1/mqtt_disconnect/`
 

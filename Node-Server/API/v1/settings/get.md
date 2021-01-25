@@ -1,6 +1,6 @@
 # GET settings
 
-Create a new mail configuration.
+get the existing configuration.
 
 **URL** : `/api/v1/settings/`
 

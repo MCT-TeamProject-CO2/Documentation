@@ -1,6 +1,6 @@
 # POST settings
 
-Create a new mail configuration.
+Create a configuration or update the old configuration.
 
 **URL** : `/api/v1/settings/`
 

@@ -42,7 +42,7 @@ Returns the new user profile.
 
 **Code** : `400 BAD REQUEST`
 
-**Content** :
+**Content** 
 
 ```json
 {
