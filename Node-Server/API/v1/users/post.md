@@ -39,7 +39,7 @@ Example Body:
     "password": "password"
 }
 ```
-If the account type is set to `oauth2`, you can omit the `username`  and `password` fields in the user object.
+If the account type is set to `oauth2`, you can omit the `username` and `password` fields in the user object.
 
 Passwords are hashed right before the user object is inserted.
 

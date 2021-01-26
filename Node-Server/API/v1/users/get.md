@@ -46,6 +46,10 @@ This endpoint returns a json.
         "username": "Yimura",
         "password": "$2b$10$XgdcN654JrjGzjd0LRzxvucTTYT32kvlKl2qQyY8BrgOyeXUSt3xu",
         "type": "normal",
+        "config": {
+            "mailNotifications": "boolean",
+            "smsNotifications": "boolean"
+        },
         "uid": "6140ae10-40a7-42e2-910b-cb996f35854f",
         "__v": 0
     }
