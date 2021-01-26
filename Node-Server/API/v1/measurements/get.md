@@ -24,7 +24,10 @@ Get the last 10 minutes of measurements for a given location.
     "tagString": "BCE.C.0.003",
     "delta": 10,
     "start" : "unix timestamp",
-    "end" : "unix timestamp"
+    "end" : "unix timestamp",
+    "fields" : ["field1", "field2", ...],
+    "mean" : "boolean",
+    "aggregate" : "time string (5s, 5m, ...)"
 }
 ```
 **Params**:
@@ -39,6 +42,12 @@ Get the last 10 minutes of measurements for a given location.
     `optional` Timestamp from where to start getting measurements.
  - **end**
     `optional` Timestamp till where you want to get the measurements.
+ - **field**
+    fields to retreive from influx db
+ - **mean**
+    get mean datapoints or not
+ - **aggregate**
+    mean length
 
 ## Success Response
 
