@@ -18,27 +18,11 @@ This endpoint does not delete users but instead just disables their access right
 
 ## Success Response
 
-**Code** : `200 OK`
+**Code** : `204 NO CONTENT`
 
 **Content example**
 
-Returns the new user profile.
-```json
-{
-    "disabled": true,
-    "_id": "5ff5c4bff45576e12b62f087",
-    "email": "email@example.com",
-    "username": "Yimura",
-    "password": "$2b$10$XgdcN654JrjGzjd0LRzxvucTTYT32kvlKl2qQyY8BrgOyeXUSt3xu",
-    "type": "normal",
-    "config": {
-            "mailNotifications": "boolean",
-            "smsNotifications": "boolean"
-        },
-    "uid": "6140ae10-40a7-42e2-910b-cb996f35854f",
-    "__v": 0
-}
-```
+Empty response body.
 
 ## Error Response 400
 
@@ -69,5 +53,21 @@ Returns the new user profile.
     "code": 403,
     "status": "403 - Permission Denied",
     "message": "The client does not have permission to access the requested resource."
+}
+```
+
+## Error Response 406
+
+**Condition** : The body contents are invalid or empty.
+
+**Code** : `406 NOT ACCEPTABLE`
+
+**Content** :
+
+```json
+{
+    "code": 406,
+    "status": "406 - Not Acceptable",
+    "message": "An error specific to the creation/insertion of the user in the DB."
 }
 ```
